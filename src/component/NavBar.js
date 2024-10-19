@@ -2,6 +2,8 @@ import React from 'react';
 
 
 const NavBar = () => {
+
+  
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-green">
