@@ -1,0 +1,54 @@
+/* Ensure the container takes full height */
+.full-screen-container {
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Make the table responsive and take the remaining space */
+.full-height-table {
+  flex-grow: 1;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Ensure links inside buttons look like buttons */
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Set a custom background color for the navbar */
+.bg-green {
+  background-color: rgb(128, 0, 38) !important;
+}
+
+/* Optionally, you can change the text color to make it more readable */
+.navbar-nav .nav-link {
+  color: white !important;
+}
+.navbar-brand {
+  color: white !important;
+}
+/* HomePage.css */
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.full-screen-image {
+  position: fixed; /* Change to fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Cover the entire area without stretching */
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+nav {
+  position: relative; /* Ensures NavBar is positioned normally */
+  z-index: 1; /* Brings NavBar above the image */
+}
+
